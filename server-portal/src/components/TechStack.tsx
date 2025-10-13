@@ -5,54 +5,54 @@ const TechStack = () => {
   const [activeCategory, setActiveCategory] = useState('frontend')
 
   const techData = {
-    frontend: [
-      { name: 'React', description: '用于构建用户界面的JavaScript库' },
-      { name: 'Vue.js', description: '渐进式JavaScript框架' },
-      { name: 'TypeScript', description: 'JavaScript的超集，添加了类型系统' },
-      { name: 'Tailwind CSS', description: '实用优先的CSS框架' },
-      { name: 'Next.js', description: 'React全栈框架' },
-      { name: 'Vite', description: '下一代前端构建工具' }
+    product: [
+      { name: 'Axure RP', description: '产品原型设计工具' },
+      { name: 'Figma', description: '协作式界面设计工具' },
+      { name: 'Xmind', description: '思维导图与头脑风暴工具' },
+      { name: 'Notion', description: '知识管理与协作平台' },
+      { name: 'Jira', description: '项目管理与问题跟踪工具' },
+      { name: 'Confluence', description: '团队协作与文档管理' }
     ],
-    backend: [
-      { name: 'Node.js', description: '基于Chrome V8引擎的JavaScript运行时' },
-      { name: 'Python', description: '简洁、优雅的编程语言' },
-      { name: 'Express', description: '快速、极简的Node.js Web框架' },
-      { name: 'FastAPI', description: '现代、快速的Python Web框架' },
-      { name: 'NestJS', description: '构建高效、可扩展的Node.js服务器端应用' },
-      { name: 'Django', description: 'Python高级Web框架' }
+    aitools: [
+      { name: 'Cursor', description: 'AI辅助编程IDE' },
+      { name: 'Kiro', description: 'AI代码助手' },
+      { name: 'CodeBuddy', description: 'AI开发工具' },
+      { name: 'Trae', description: 'AI编程助手' },
+      { name: 'ChatGPT', description: 'AI对话与内容生成' },
+      { name: 'Claude', description: 'AI助手与分析工具' }
     ],
-    ai: [
-      { name: 'OpenAI API', description: '强大的AI模型API服务' },
-      { name: 'LangChain', description: '构建LLM应用的框架' },
-      { name: 'TensorFlow', description: '端到端开源机器学习平台' },
-      { name: 'Hugging Face', description: '自然语言处理模型库' },
-      { name: 'PyTorch', description: '开源机器学习框架' },
-      { name: 'OpenCV', description: '计算机视觉库' }
+    aigc: [
+      { name: 'Stable Diffusion', description: 'AI图像生成模型' },
+      { name: 'Midjourney', description: 'AI艺术创作平台' },
+      { name: 'Recraft', description: 'AI设计工具' },
+      { name: '可灵AI', description: 'AI视频生成工具' },
+      { name: '即梦AI', description: 'AI视频创作平台' },
+      { name: 'Suno AI', description: 'AI音乐创作工具' }
     ],
-    database: [
-      { name: 'MongoDB', description: '面向文档的NoSQL数据库' },
-      { name: 'PostgreSQL', description: '强大的开源关系型数据库' },
-      { name: 'MySQL', description: '流行的开源关系型数据库' },
-      { name: 'Redis', description: '内存数据结构存储系统' },
-      { name: 'Prisma', description: '下一代数据库工具包' },
-      { name: 'Supabase', description: '开源Firebase替代方案' }
+    tech: [
+      { name: 'C语言', description: '系统编程语言基础' },
+      { name: 'Python', description: '数据处理与脚本编写' },
+      { name: 'MySQL', description: '关系型数据库管理' },
+      { name: 'Supabase', description: '开源后端即服务平台' },
+      { name: 'Git', description: '版本控制系统' },
+      { name: 'VS Code', description: '代码编辑器' }
     ],
-    devops: [
-      { name: 'Git', description: '分布式版本控制系统' },
-      { name: 'Docker', description: '容器化平台' },
-      { name: 'GitHub Actions', description: 'CI/CD自动化工具' },
-      { name: 'Vercel', description: '前端部署平台' },
-      { name: 'AWS', description: '亚马逊云服务平台' },
-      { name: 'Kubernetes', description: '容器编排平台' }
+    skills: [
+      { name: '需求分析', description: '用户需求挖掘与分析' },
+      { name: '产品规划', description: '产品路线图与功能规划' },
+      { name: '原型设计', description: '交互原型与UI设计' },
+      { name: '项目管理', description: '敏捷开发与项目协调' },
+      { name: '数据分析', description: '用户行为与产品数据分析' },
+      { name: 'AI应用', description: 'AI技术在产品中的应用' }
     ]
   }
 
   const categories = [
-    { id: 'frontend', name: '前端', icon: Code },
-    { id: 'backend', name: '后端', icon: Terminal },
-    { id: 'ai', name: 'AI与机器学习', icon: Zap },
-    { id: 'database', name: '数据库', icon: Package },
-    { id: 'devops', name: '开发工具', icon: Globe }
+    { id: 'product', name: '产品工具', icon: Package },
+    { id: 'aitools', name: 'AI开发工具', icon: Zap },
+    { id: 'aigc', name: 'AIGC创作', icon: Code },
+    { id: 'tech', name: '技术基础', icon: Terminal },
+    { id: 'skills', name: '核心能力', icon: Globe }
   ]
 
   return (
@@ -65,116 +65,140 @@ const TechStack = () => {
             </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            精通多种编程语言、框架和工具，能够根据项目需求选择最适合的技术组合
+            熟练使用多种产品设计工具和AI工具，具备扎实的技术基础，能够高效完成产品设计与开发协作
           </p>
         </div>
         
+        {/* 分类标签 - 添加动画 */}
         <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((category) => (
+          {categories.map((category, idx) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 ${
+              className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 hover:scale-105 ${
                 activeCategory === category.id
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : 'bg-white text-gray-700 hover:bg-blue-100 border border-blue-200'
+                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg hover:shadow-xl'
+                  : 'bg-white text-gray-700 hover:bg-blue-50 border border-blue-200 hover:border-blue-400'
               }`}
+              style={{
+                animation: `scaleIn 0.4s ease-out ${idx * 0.05}s forwards`,
+                opacity: 0
+              }}
             >
-              <category.icon size={18} />
+              <category.icon size={18} className={activeCategory === category.id ? 'animate-pulse' : ''} />
               {category.name}
             </button>
           ))}
         </div>
         
+        {/* 技术列表 - 添加交错动画 */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {techData[activeCategory as keyof typeof techData].map((tech, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-sm border border-blue-100 hover:shadow-md transition-all"
+              className="bg-white rounded-xl p-6 shadow-sm border border-blue-100 hover:shadow-xl transition-all duration-300 card-hover group cursor-default"
+              style={{
+                animation: `fadeInUp 0.5s ease-out ${index * 0.05}s forwards`,
+                opacity: 0
+              }}
             >
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{tech.name}</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-blue-600 group-hover:scale-150 transition-transform"></span>
+                {tech.name}
+              </h3>
               <p className="text-gray-600 text-sm">{tech.description}</p>
             </div>
           ))}
         </div>
         
+        {/* 技术优势和持续学习 - 添加动画 */}
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">技术优势</h3>
+          <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg p-8 border border-blue-100 card-hover">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
+                <Zap size={16} className="text-white" />
+              </span>
+              技术优势
+            </h3>
             <div className="space-y-4">
-              <div className="flex gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Zap size={20} className="text-blue-600" />
+              <div className="flex gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Zap size={20} className="text-blue-600 group-hover:rotate-12 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">全栈开发能力</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1 group-hover:text-blue-600 transition-colors">产品设计能力</h4>
                   <p className="text-gray-600 text-sm">
-                    掌握前后端完整技术栈，能够独立完成从设计到部署的全流程开发
+                    熟练使用Axure、Figma等工具，能够快速输出高质量产品原型
                   </p>
                 </div>
               </div>
               
-              <div className="flex gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Code size={20} className="text-blue-600" />
+              <div className="flex gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Code size={20} className="text-blue-600 group-hover:rotate-12 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">AI技术整合</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1 group-hover:text-blue-600 transition-colors">AI工具应用</h4>
                   <p className="text-gray-600 text-sm">
-                    熟练整合多种AI服务，构建智能化应用解决方案
+                    熟练使用Cursor、Kiro等AI开发工具，提升工作效率
                   </p>
                 </div>
               </div>
               
-              <div className="flex gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Terminal size={20} className="text-blue-600" />
+              <div className="flex gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Terminal size={20} className="text-blue-600 group-hover:rotate-12 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">性能优化</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1 group-hover:text-blue-600 transition-colors">AIGC创作</h4>
                   <p className="text-gray-600 text-sm">
-                    注重应用性能优化，确保高并发、低延迟的用户体验
+                    掌握多种AI生成工具，在图像、视频、音乐创作方面经验丰富
                   </p>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-blue-100">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">持续学习</h3>
+          <div className="bg-gradient-to-br from-white to-indigo-50 rounded-2xl shadow-lg p-8 border border-blue-100 card-hover">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+              <span className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
+                <Globe size={16} className="text-white" />
+              </span>
+              持续学习
+            </h3>
             <div className="space-y-4">
-              <div className="flex gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Globe size={20} className="text-blue-600" />
+              <div className="flex gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Globe size={20} className="text-indigo-600 group-hover:rotate-12 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">技术趋势跟踪</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1 group-hover:text-indigo-600 transition-colors">项目管理经验</h4>
                   <p className="text-gray-600 text-sm">
-                    持续关注行业最新技术趋势，及时更新技术栈
+                    负责过9个公司项目，具备完整的项目管理经验
                   </p>
                 </div>
               </div>
               
-              <div className="flex gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Package size={20} className="text-blue-600" />
+              <div className="flex gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Package size={20} className="text-indigo-600 group-hover:rotate-12 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">开源贡献</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1 group-hover:text-indigo-600 transition-colors">持续学习</h4>
                   <p className="text-gray-600 text-sm">
-                    积极参与开源项目，分享技术经验
+                    积极学习网课，不断提升AI和产品相关技能
                   </p>
                 </div>
               </div>
               
-              <div className="flex gap-3">
-                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                  <Code size={20} className="text-blue-600" />
+              <div className="flex gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                  <Code size={20} className="text-indigo-600 group-hover:rotate-12 transition-transform" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">知识分享</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1 group-hover:text-indigo-600 transition-colors">技术理解</h4>
                   <p className="text-gray-600 text-sm">
-                    通过技术博客、教程等形式分享开发经验
+                    具备扎实的技术基础，能够与开发团队高效沟通
                   </p>
                 </div>
               </div>

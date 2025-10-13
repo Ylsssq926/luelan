@@ -25,20 +25,36 @@ const About = () => {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Azure Glance</h3>
-                <p className="text-blue-600 font-medium mb-4">AI工具链专家 · 产品经理</p>
+                <p className="text-blue-600 font-medium mb-4">产品经理 · AI爱好者</p>
                 
                 <div className="space-y-3 text-left">
                   <div className="flex items-center gap-3 text-gray-600">
-                    <MapPin size={18} className="text-blue-500" />
+                    <MapPin size={18} className="text-blue-500 flex-shrink-0" />
                     <span>中国 · 北京</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-600">
-                    <Calendar size={18} className="text-blue-500" />
-                    <span>8年+ 开发经验</span>
+                    <Calendar size={18} className="text-blue-500 flex-shrink-0" />
+                    <span>2019年起 · 产品经理</span>
                   </div>
                   <div className="flex items-center gap-3 text-gray-600">
-                    <Mail size={18} className="text-blue-500" />
-                    <span>contact@example.com</span>
+                    <Award size={18} className="text-blue-500 flex-shrink-0" />
+                    <span>计算机科学与技术</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+                    <Mail size={18} className="text-blue-500 flex-shrink-0" />
+                    <a href="tel:17633918339" className="hover:underline">17633918339</a>
+                  </div>
+                  <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+                    <svg className="w-[18px] h-[18px] text-blue-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M21.5 9h-19C1.67 9 1 9.67 1 10.5v10C1 21.33 1.67 22 2.5 22h19c.83 0 1.5-.67 1.5-1.5v-10c0-.83-.67-1.5-1.5-1.5zm-1.64 2L12 15.5 4.14 11h15.72zM3 20V11.81l9 5.63 9-5.63V20H3z"/>
+                    </svg>
+                    <span className="text-sm">QQ: 4699906100</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+                    <svg className="w-[18px] h-[18px] text-blue-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8.691 2.188C7.82 2.188 7.12 2.89 7.12 3.758v16.484c0 .868.7 1.569 1.571 1.569h6.618c.868 0 1.571-.7 1.571-1.569V3.758c0-.868-.703-1.57-1.571-1.57H8.691zm.746 1.5h4.126c.414 0 .75.336.75.75s-.336.75-.75.75H9.437c-.414 0-.75-.336-.75-.75s.336-.75.75-.75zm2.063 14.438c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75z"/>
+                    </svg>
+                    <span className="text-sm">微信: pain_wei</span>
                   </div>
                 </div>
                 
@@ -47,9 +63,19 @@ const About = () => {
                     href="https://github.com/Ylsssq926"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-white text-blue-700 hover:bg-blue-100 transition-all"
+                    className="p-2 rounded-lg bg-white text-blue-700 hover:bg-blue-100 transition-all hover:scale-110"
+                    title="GitHub"
                   >
                     <Github size={20} />
+                  </a>
+                  <a
+                    href="https://tp9aaq8t4g.feishu.cn/docx/HET7dNm2aofdyMxMMgfcFGBUnke"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg bg-white text-blue-700 hover:bg-blue-100 transition-all hover:scale-110"
+                    title="产品经理作品集"
+                  >
+                    <ExternalLink size={20} />
                   </a>
                 </div>
               </div>
@@ -66,35 +92,35 @@ const About = () => {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div className="p-4 bg-white rounded-lg border border-blue-100">
-                    <h4 className="font-semibold text-blue-800 mb-2">AI工具链开发</h4>
-                    <p className="text-sm text-gray-600">构建端到端AI解决方案，从数据处理到模型部署</p>
+                    <h4 className="font-semibold text-blue-800 mb-2">产品规划与设计</h4>
+                    <p className="text-sm text-gray-600">需求分析、产品设计、用户体验优化</p>
                   </div>
                   
                   <div className="p-4 bg-white rounded-lg border border-blue-100">
-                    <h4 className="font-semibold text-blue-800 mb-2">产品设计与管理</h4>
-                    <p className="text-sm text-gray-600">用户体验优化与产品功能创新设计</p>
+                    <h4 className="font-semibold text-blue-800 mb-2">AI工具应用</h4>
+                    <p className="text-sm text-gray-600">熟练使用Cursor、Kiro等AI开发工具</p>
                   </div>
                   
                   <div className="p-4 bg-white rounded-lg border border-blue-100">
-                    <h4 className="font-semibold text-blue-800 mb-2">全栈应用开发</h4>
-                    <p className="text-sm text-gray-600">前后端技术栈整合，打造高性能Web应用</p>
+                    <h4 className="font-semibold text-blue-800 mb-2">AIGC创作</h4>
+                    <p className="text-sm text-gray-600">图像、视频、音乐等AI生成内容创作</p>
                   </div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="p-4 bg-white rounded-lg border border-blue-100">
-                    <h4 className="font-semibold text-blue-800 mb-2">系统架构设计</h4>
-                    <p className="text-sm text-gray-600">可扩展、高可用系统架构规划与实施</p>
+                    <h4 className="font-semibold text-blue-800 mb-2">技术基础</h4>
+                    <p className="text-sm text-gray-600">C语言、Python、MySQL基础，Supabase应用</p>
                   </div>
                   
                   <div className="p-4 bg-white rounded-lg border border-blue-100">
-                    <h4 className="font-semibold text-blue-800 mb-2">DevOps与自动化</h4>
-                    <p className="text-sm text-gray-600">CI/CD流程构建与基础设施自动化管理</p>
+                    <h4 className="font-semibold text-blue-800 mb-2">项目管理</h4>
+                    <p className="text-sm text-gray-600">负责过9个公司项目，具备完整项目管理经验</p>
                   </div>
                   
                   <div className="p-4 bg-white rounded-lg border border-blue-100">
-                    <h4 className="font-semibold text-blue-800 mb-2">技术咨询与指导</h4>
-                    <p className="text-sm text-gray-600">技术选型评估与团队技术能力提升</p>
+                    <h4 className="font-semibold text-blue-800 mb-2">持续学习</h4>
+                    <p className="text-sm text-gray-600">积极学习网课，不断提升专业技能</p>
                   </div>
                 </div>
               </div>
@@ -110,11 +136,11 @@ const About = () => {
                 <div className="relative pl-8 pb-6 border-l-2 border-blue-200">
                   <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-2 top-0"></div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800">AI工具链专家 · 产品经理</h4>
-                    <p className="text-blue-600 mb-2">2020 - 至今</p>
+                    <h4 className="text-lg font-semibold text-gray-800">产品经理</h4>
+                    <p className="text-blue-600 mb-2">2019 - 至今</p>
                     <p className="text-gray-600">
-                      负责企业级AI工具链平台的设计与开发，整合多种AI服务，构建端到端解决方案，
-                      提升团队开发效率30%以上。
+                      负责过9个公司项目的产品规划与管理，从需求分析到产品上线全流程把控。
+                      擅长将AI技术融入产品设计，提升用户体验和产品竞争力。
                     </p>
                   </div>
                 </div>
@@ -122,11 +148,12 @@ const About = () => {
                 <div className="relative pl-8 pb-6 border-l-2 border-blue-200">
                   <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-2 top-0"></div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800">全栈开发工程师</h4>
-                    <p className="text-blue-600 mb-2">2018 - 2020</p>
+                    <h4 className="text-lg font-semibold text-gray-800">AI探索与实践</h4>
+                    <p className="text-blue-600 mb-2">2022 - 至今</p>
                     <p className="text-gray-600">
-                      参与多个大型Web应用开发，负责前端架构设计与后端API开发，
-                      实现高并发、低延迟的系统性能。
+                      深度探索AI技术应用，熟练掌握多种AIGC工具。
+                      在图像生成（SD、MJ、Recraft）、视频生成（可灵、即梦）、
+                      音乐创作（Suno AI）等领域积累丰富实践经验。
                     </p>
                   </div>
                 </div>
@@ -134,10 +161,11 @@ const About = () => {
                 <div className="relative pl-8">
                   <div className="absolute w-4 h-4 bg-blue-600 rounded-full -left-2 top-0"></div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800">前端开发工程师</h4>
-                    <p className="text-blue-600 mb-2">2016 - 2018</p>
+                    <h4 className="text-lg font-semibold text-gray-800">教育背景</h4>
+                    <p className="text-blue-600 mb-2">计算机科学与技术专业</p>
                     <p className="text-gray-600">
-                      专注于前端技术开发与用户体验优化，参与多个企业级项目的前端架构设计。
+                      系统学习计算机基础知识，具备C语言证书。
+                      在职期间持续学习，通过网课获得多项AI相关认证。
                     </p>
                   </div>
                 </div>
@@ -156,24 +184,24 @@ const About = () => {
             <div className="space-y-4">
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                  <Zap size={20} className="text-blue-600" />
+                  <Target size={20} className="text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">技术驱动创新</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1">用户体验至上</h4>
                   <p className="text-gray-600 text-sm">
-                    以技术创新为核心驱动力，不断探索前沿技术的应用场景
+                    始终将用户需求放在首位，打造简洁、高效、易用的产品
                   </p>
                 </div>
               </div>
               
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0">
-                  <Target size={20} className="text-blue-600" />
+                  <Zap size={20} className="text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">用户体验至上</h4>
+                  <h4 className="font-semibold text-gray-800 mb-1">AI赋能产品</h4>
                   <p className="text-gray-600 text-sm">
-                    始终将用户体验放在首位，打造简洁、高效、易用的产品
+                    积极探索AI技术在产品中的应用，提升产品智能化水平
                   </p>
                 </div>
               </div>
@@ -185,7 +213,7 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-1">持续学习成长</h4>
                   <p className="text-gray-600 text-sm">
-                    保持学习热情，不断更新知识体系，适应快速变化的技术环境
+                    保持学习热情，通过网课和实践不断提升专业能力
                   </p>
                 </div>
               </div>
@@ -200,22 +228,22 @@ const About = () => {
             
             <div className="space-y-4">
               <div className="p-4 bg-white rounded-lg border border-blue-100">
-                <h4 className="font-semibold text-blue-800 mb-2">技术博客</h4>
+                <h4 className="font-semibold text-blue-800 mb-2">产品作品集</h4>
                 <p className="text-sm text-gray-600 mb-3">
-                  分享最新技术趋势、实战经验与开发技巧
+                  产品经理工作经历与项目案例展示
                 </p>
-                <a href="#" className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center gap-1">
-                  访问博客 <ExternalLink size={14} />
+                <a href="https://tp9aaq8t4g.feishu.cn/docx/HET7dNm2aofdyMxMMgfcFGBUnke" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center gap-1">
+                  查看作品集 <ExternalLink size={14} />
                 </a>
               </div>
               
               <div className="p-4 bg-white rounded-lg border border-blue-100">
-                <h4 className="font-semibold text-blue-800 mb-2">开源项目</h4>
+                <h4 className="font-semibold text-blue-800 mb-2">AI工具探索</h4>
                 <p className="text-sm text-gray-600 mb-3">
-                  参与和维护多个开源项目，贡献代码与文档
+                  AIGC创作实践与AI工具使用经验分享
                 </p>
                 <a href="https://github.com/Ylsssq926" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center gap-1">
-                  查看项目 <ExternalLink size={14} />
+                  GitHub主页 <ExternalLink size={14} />
                 </a>
               </div>
             </div>

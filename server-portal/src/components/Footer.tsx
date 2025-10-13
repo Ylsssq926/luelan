@@ -11,8 +11,8 @@ const Footer = () => {
               Azure Glance
             </h3>
             <p className="text-gray-400 text-sm">
-              AI工具链专家 · 产品经理<br />
-              致力于打造高效、智能的数字解决方案
+              产品经理 · AI爱好者<br />
+              探索AI技术在产品中的应用，提升工作效率
             </p>
           </div>
           
@@ -29,13 +29,19 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">联系方式</h4>
             <div className="space-y-3">
-              <a href="https://github.com/Ylsssq926" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm">
-                <Github size={18} />
+              <a href="https://github.com/Ylsssq926" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
+                <Github size={18} className="group-hover:scale-110 transition-transform" />
                 <span>GitHub</span>
               </a>
-              <a href="mailto:contact@example.com" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm">
-                <Mail size={18} />
-                <span>Email</span>
+              <a href="tel:17633918339" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
+                <Mail size={18} className="group-hover:scale-110 transition-transform" />
+                <span>17633918339</span>
+              </a>
+              <a href="https://tp9aaq8t4g.feishu.cn/docx/HET7dNm2aofdyMxMMgfcFGBUnke" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
+                <svg className="w-[18px] h-[18px] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+                </svg>
+                <span>产品作品集</span>
               </a>
             </div>
           </div>
