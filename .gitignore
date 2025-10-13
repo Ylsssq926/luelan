@@ -1,0 +1,28 @@
+# Root repo ignores subprojects and build artifacts
+
+# Ignore all apps content (each app has its own Git)
+apps/**
+
+# Common package managers
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# Logs and temp
+*.log
+tmp/
+*.tmp
+
+# Build outputs
+dist/
+build/
+.out/
+.next/
+
+# Env files
+.env*
+.DS_Store
+
+# Tooling
+.vscode/
+.codebuddy/
