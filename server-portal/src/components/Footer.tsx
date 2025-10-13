@@ -48,8 +48,13 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-          <p className="flex items-center justify-center gap-1">
+          <p className="flex items-center justify-center gap-1 mb-2">
             Made with <Heart size={16} className="text-red-500" /> by Azure Glance © 2025
+          </p>
+          <p className="text-xs">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+              豫ICP备2025147457号
+            </a>
           </p>
         </div>
       </div>

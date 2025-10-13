@@ -38,10 +38,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Velo AI评测站',
-      description: 'AI模型评测与对比平台，提供多维度的AI能力测试和性能分析，帮助用户选择最适合的AI模型',
-      tags: ['React', 'TypeScript', 'AI评测', 'Next.js'],
-      status: 'running',
+      title: 'VeloAI - AI工具评测平台',
+      description: 'AI工具极速测评库，专注于新发布AI工具的快速测评，通过客观中立短评和评分为用户提供高效的工具选择参考',
+      tags: ['React', 'TypeScript', 'SQLite', 'Express'],
+      status: 'maintenance',
       link: null,
       images: [
         '/images/projects/欢迎页面.png',
@@ -53,9 +53,36 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: '掠蓝写作 - AI智能小说创作工具',
+      description: '基于Vue 3的专业AI小说创作平台，集成先进AI模型，提供完整的创作工具链，支持智能续写、内容润色、世界观构建等功能',
+      tags: ['Vue 3', 'Element Plus', 'AI创作', 'WangEditor'],
+      status: 'running',
+      link: null,
+      images: []
+    },
+    {
+      id: 3,
+      title: 'AI工具导航站',
+      description: '现代化的AI工具导航网站，帮助用户发现和使用最优质的AI工具，支持智能搜索、分类筛选、工具收藏等功能',
+      tags: ['Next.js 14', 'TypeScript', 'Tailwind CSS'],
+      status: 'running',
+      link: null,
+      images: []
+    },
+    {
+      id: 4,
+      title: '掠蓝速通站',
+      description: '3分钟工具站，为本科毕业生提供答辩PPT、论文降重等可直接使用的资源，零服务器成本，解决新手痛点',
+      tags: ['HTML', 'JavaScript', 'SQLite', 'Bootstrap'],
+      status: 'running',
+      link: null,
+      images: []
+    },
+    {
+      id: 5,
       title: '小游戏对战平台',
       description: '多人在线游戏对战平台，支持实时匹配、游戏大厅、好友系统等功能，提供流畅的游戏体验',
-      tags: ['Vue.js', 'WebSocket', 'Node.js', '实时通信'],
+      tags: ['WebSocket', '实时通信', '游戏开发'],
       status: 'running',
       link: null,
       images: [
@@ -66,10 +93,10 @@ const Projects = () => {
       ]
     },
     {
-      id: 3,
+      id: 6,
       title: 'AI虚拟恋爱游戏',
-      description: '基于AI的虚拟恋爱互动游戏，智能对话系统让虚拟角色更加真实，提供沉浸式的互动体验',
-      tags: ['React', 'AI对话', 'LangChain', 'OpenAI'],
+      description: '基于AI的虚拟恋爱互动游戏，使用Cursor辅助开发，智能对话系统让虚拟角色更加真实，提供沉浸式的互动体验',
+      tags: ['React', 'AI对话', 'Supabase', 'Cursor辅助'],
       status: 'running',
       link: null,
       images: [
@@ -82,10 +109,10 @@ const Projects = () => {
       ]
     },
     {
-      id: 4,
+      id: 7,
       title: 'AI文字冒险游戏',
-      description: 'AI驱动的文字冒险游戏，动态生成剧情和选项，每次游戏都有不同的体验和结局',
-      tags: ['React', 'AI生成', 'GPT', '游戏设计'],
+      description: 'AI驱动的文字冒险游戏，使用Cursor辅助开发，动态生成剧情和选项，每次游戏都有不同的体验和结局',
+      tags: ['React', 'AI生成', 'Supabase', 'Cursor辅助'],
       status: 'running',
       link: null,
       images: [
@@ -96,10 +123,28 @@ const Projects = () => {
       ]
     },
     {
-      id: 5,
+      id: 8,
+      title: '暗黑破坏神风格RPG',
+      description: '暗黑破坏神4风格RPG游戏，使用Cursor辅助开发，五大职业系统、丰富装备系统、完整技能树，暗黑哥特风格UI设计',
+      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Cursor辅助'],
+      status: 'running',
+      link: null,
+      images: []
+    },
+    {
+      id: 9,
+      title: '金庸群侠传卡牌游戏',
+      description: '金庸群侠传主题卡牌游戏，使用Cursor辅助开发，收集经典人物卡牌，组建卡组进行战斗',
+      tags: ['React', 'TypeScript', 'Supabase', 'Cursor辅助'],
+      status: 'running',
+      link: null,
+      images: []
+    },
+    {
+      id: 10,
       title: '2048猫猫',
-      description: '经典2048游戏的可爱猫猫版本，简洁的界面设计和流畅的游戏体验',
-      tags: ['JavaScript', 'Canvas', '游戏开发', 'UI设计'],
+      description: '经典2048游戏的可爱猫猫版本，使用Cursor辅助开发，简洁的界面设计和流畅的游戏体验',
+      tags: ['JavaScript', 'Canvas', '微信小程序', 'Cursor辅助'],
       status: 'running',
       link: null,
       images: [

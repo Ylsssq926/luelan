@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Code, Terminal, Zap, Package, Globe } from 'lucide-react'
 
 const TechStack = () => {
-  const [activeCategory, setActiveCategory] = useState('frontend')
+  const [activeCategory, setActiveCategory] = useState('product')
 
   const techData = {
     product: [
