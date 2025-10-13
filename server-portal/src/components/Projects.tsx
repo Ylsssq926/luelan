@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { ExternalLink, Eye, Package, Zap, Terminal, Code, Award } from 'lucide-react'
+import { useState } from 'react'
+import { ExternalLink, Package, Zap, Terminal, Code, Award } from 'lucide-react'
 
 const Projects = () => {
   const [filter, setFilter] = useState('all')

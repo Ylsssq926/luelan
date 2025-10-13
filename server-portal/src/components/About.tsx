@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Github, Mail, MapPin, Calendar, Award, Target, Zap, ExternalLink } from 'lucide-react'
 
 const About = () => {

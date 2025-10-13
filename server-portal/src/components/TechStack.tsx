@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Code, Terminal, Zap, Package, Globe } from 'lucide-react'
 
 const TechStack = () => {

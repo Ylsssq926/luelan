@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Github, ArrowDown, Zap, Package, Terminal, User } from 'lucide-react'
 
 const Hero = () => {
