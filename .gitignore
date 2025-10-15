@@ -1,8 +1,23 @@
+# Archives: ignore heavy and legacy content
+archives/**
+archives/packages/*.zip
+
+>>>>>>> 27b257b6f3835cea7eeb703594664643f5ab89f2
+=======
 # Root repo ignores subprojects and build artifacts
 
 # Ignore all apps content (each app has its own Git)
 apps/**
 
+# Archives: ignore heavy and legacy content
+archives/**
+archives/packages/*.zip
+=======
+# Archives: ignore heavy and legacy content
+archives/**
+archives/packages/*.zip
+
+>>>>>>> 27b257b6f3835cea7eeb703594664643f5ab89f2
 # Common package managers
 node_modules/
 pnpm-lock.yaml
