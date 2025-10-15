@@ -1,37 +1,37 @@
 
-import { Github, Mail, MapPin, Calendar, Award, Target, Zap, ExternalLink } from 'lucide-react'
+import { Github, Mail, Calendar, Award, Target, ExternalLink, Phone, MessageCircle, Zap } from 'lucide-react'
 
 const About = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 px-4">
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               关于我
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-4">
             热衷于技术创新与产品开发，致力于打造高效、智能的数字解决方案
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           <div className="lg:col-span-1">
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl shadow-lg p-8 border border-blue-100">
               <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center">
-                  <Zap className="text-white" size={48} />
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                  <img 
+                    src="/images/avatar.jpg" 
+                    alt="头像" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">Azure Glance</h3>
                 <p className="text-blue-600 font-medium mb-4">产品经理 · AI爱好者</p>
                 
                 <div className="space-y-3 text-left">
-                  <div className="flex items-center gap-3 text-gray-600">
-                    <MapPin size={18} className="text-blue-500 flex-shrink-0" />
-                    <span>中国 · 北京</span>
-                  </div>
                   <div className="flex items-center gap-3 text-gray-600">
                     <Calendar size={18} className="text-blue-500 flex-shrink-0" />
                     <span>2019年起 · 产品经理</span>
@@ -40,21 +40,35 @@ const About = () => {
                     <Award size={18} className="text-blue-500 flex-shrink-0" />
                     <span>计算机科学与技术</span>
                   </div>
-                  <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
-                    <Mail size={18} className="text-blue-500 flex-shrink-0" />
-                    <a href="tel:17633918339" className="hover:underline">17633918339</a>
-                  </div>
-                  <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
-                    <svg className="w-[18px] h-[18px] text-blue-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M21.5 9h-19C1.67 9 1 9.67 1 10.5v10C1 21.33 1.67 22 2.5 22h19c.83 0 1.5-.67 1.5-1.5v-10c0-.83-.67-1.5-1.5-1.5zm-1.64 2L12 15.5 4.14 11h15.72zM3 20V11.81l9 5.63 9-5.63V20H3z"/>
-                    </svg>
-                    <span className="text-sm">QQ: 4699906100</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
-                    <svg className="w-[18px] h-[18px] text-blue-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8.691 2.188C7.82 2.188 7.12 2.89 7.12 3.758v16.484c0 .868.7 1.569 1.571 1.569h6.618c.868 0 1.571-.7 1.571-1.569V3.758c0-.868-.703-1.57-1.571-1.57H8.691zm.746 1.5h4.126c.414 0 .75.336.75.75s-.336.75-.75.75H9.437c-.414 0-.75-.336-.75-.75s.336-.75.75-.75zm2.063 14.438c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75z"/>
-                    </svg>
-                    <span className="text-sm">微信: pain_wei</span>
+                </div>
+                
+                {/* 联系方式分组 */}
+                <div className="mt-6 pt-6 border-t border-blue-200">
+                  <h4 className="text-sm font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                    <MessageCircle size={16} className="text-blue-500" />
+                    联系方式
+                  </h4>
+                  <div className="space-y-2.5 text-left">
+                    <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+                      <Phone size={16} className="text-blue-500 flex-shrink-0" />
+                      <a href="tel:17633918339" className="text-sm hover:underline">17633918339</a>
+                    </div>
+                    <div className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+                      <Mail size={16} className="text-blue-500 flex-shrink-0" />
+                      <a href="mailto:ylsssq@qq.com" className="text-sm hover:underline">ylsssq@qq.com</a>
+                    </div>
+                    <div className="flex items-center gap-3 text-gray-600">
+                      <svg className="w-4 h-4 text-blue-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21.5 9h-19C1.67 9 1 9.67 1 10.5v10C1 21.33 1.67 22 2.5 22h19c.83 0 1.5-.67 1.5-1.5v-10c0-.83-.67-1.5-1.5-1.5zm-1.64 2L12 15.5 4.14 11h15.72zM3 20V11.81l9 5.63 9-5.63V20H3z"/>
+                      </svg>
+                      <span className="text-sm">QQ: 4699906100</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-gray-600">
+                      <svg className="w-4 h-4 text-blue-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.691 2.188C7.82 2.188 7.12 2.89 7.12 3.758v16.484c0 .868.7 1.569 1.571 1.569h6.618c.868 0 1.571-.7 1.571-1.569V3.758c0-.868-.703-1.57-1.571-1.57H8.691zm.746 1.5h4.126c.414 0 .75.336.75.75s-.336.75-.75.75H9.437c-.414 0-.75-.336-.75-.75s.336-.75.75-.75zm2.063 14.438c-.414 0-.75.336-.75.75s.336.75.75.75.75-.336.75-.75-.336-.75-.75-.75z"/>
+                      </svg>
+                      <span className="text-sm">微信: pain_wei</span>
+                    </div>
                   </div>
                 </div>
                 

@@ -1,5 +1,5 @@
 
-import { Github, Mail, Heart } from 'lucide-react'
+import { Github, Mail, Heart, Phone } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-              Azure Glance
+              掠蓝-AI探索者
             </h3>
             <p className="text-gray-400 text-sm">
               产品经理 · AI爱好者<br />
@@ -29,13 +29,17 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">联系方式</h4>
             <div className="space-y-3">
+              <a href="tel:17633918339" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
+                <Phone size={18} className="group-hover:scale-110 transition-transform" />
+                <span>17633918339</span>
+              </a>
+              <a href="mailto:ylsssq@qq.com" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
+                <Mail size={18} className="group-hover:scale-110 transition-transform" />
+                <span>ylsssq@qq.com</span>
+              </a>
               <a href="https://github.com/Ylsssq926" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
                 <Github size={18} className="group-hover:scale-110 transition-transform" />
                 <span>GitHub</span>
-              </a>
-              <a href="tel:17633918339" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
-                <Mail size={18} className="group-hover:scale-110 transition-transform" />
-                <span>17633918339</span>
               </a>
               <a href="https://tp9aaq8t4g.feishu.cn/docx/HET7dNm2aofdyMxMMgfcFGBUnke" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors text-sm group">
                 <svg className="w-[18px] h-[18px] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
@@ -49,7 +53,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
           <p className="flex items-center justify-center gap-1 mb-2">
-            Made with <Heart size={16} className="text-red-500" /> by Azure Glance © 2025
+            Made with <Heart size={16} className="text-red-500" /> by 掠蓝-AI探索者 © 2025
           </p>
           <p className="text-xs">
             <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">

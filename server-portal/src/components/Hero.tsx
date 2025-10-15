@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Github, ArrowDown, Zap, Package, Terminal, User } from 'lucide-react'
+import { Github, Zap, Package, Terminal, User } from 'lucide-react'
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState(0)
@@ -70,15 +70,15 @@ const Hero = () => {
           <span className="animate-pulse text-blue-600">|</span>
         </div>
         
-        {/* 描述文本 - 添加动画 */}
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12 animate-fade-in-up animation-delay-300">
+        {/* 描述文本 - 添加动画 - 移动端优化 */}
+        <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto mb-12 px-4 animate-fade-in-up animation-delay-300">
           计算机科学与技术专业毕业，从2019年开始从事产品经理工作。
           热衷于探索AI技术在产品中的应用，擅长使用AI工具提升工作效率，
           在图像、视频、音乐等AIGC领域有丰富的实践经验。
         </p>
         
-        {/* 操作按钮 - 添加动画和波纹效果 */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in-up animation-delay-400">
+        {/* 操作按钮 - 添加动画和波纹效果 - 移动端优化 */}
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-12 md:mb-16 px-4 animate-fade-in-up animation-delay-400">
           <button
             onClick={() => scrollToSection('projects')}
             className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-2 button-ripple group"
@@ -96,52 +96,44 @@ const Hero = () => {
           </button>
         </div>
         
-        {/* 快速访问区域 - 添加交错动画 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        {/* 快速访问区域 - 添加交错动画 - 移动端优化 */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-12 md:mb-16 px-4">
           <button
             onClick={() => scrollToSection('projects')}
-            className="p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in"
+            className="p-3 md:p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in"
           >
-            <Package className="mx-auto mb-2 text-blue-600 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" size={24} />
-            <span className="text-sm text-gray-700 group-hover:text-blue-600 transition-colors">项目展示</span>
+            <Package className="mx-auto mb-1 md:mb-2 text-blue-600 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" size={20} />
+            <span className="text-xs md:text-sm text-gray-700 group-hover:text-blue-600 transition-colors">项目展示</span>
           </button>
           
           <button
             onClick={() => scrollToSection('techstack')}
-            className="p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in animation-delay-100"
+            className="p-3 md:p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in animation-delay-100"
           >
-            <Terminal className="mx-auto mb-2 text-blue-600 group-hover:scale-125 group-hover:-rotate-12 transition-all duration-300" size={24} />
-            <span className="text-sm text-gray-700 group-hover:text-blue-600 transition-colors">技术栈</span>
+            <Terminal className="mx-auto mb-1 md:mb-2 text-blue-600 group-hover:scale-125 group-hover:-rotate-12 transition-all duration-300" size={20} />
+            <span className="text-xs md:text-sm text-gray-700 group-hover:text-blue-600 transition-colors">技术栈</span>
           </button>
           
           <button
             onClick={() => scrollToSection('about')}
-            className="p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in animation-delay-200"
+            className="p-3 md:p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in animation-delay-200"
           >
-            <User className="mx-auto mb-2 text-blue-600 group-hover:scale-125 transition-all duration-300" size={24} />
-            <span className="text-sm text-gray-700 group-hover:text-blue-600 transition-colors">关于我</span>
+            <User className="mx-auto mb-1 md:mb-2 text-blue-600 group-hover:scale-125 transition-all duration-300" size={20} />
+            <span className="text-xs md:text-sm text-gray-700 group-hover:text-blue-600 transition-colors">关于我</span>
           </button>
           
           <a
             href="https://github.com/Ylsssq926"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in animation-delay-300"
+            className="p-3 md:p-4 bg-white rounded-xl border border-blue-100 hover:border-blue-300 hover:shadow-xl transition-all group card-hover animate-scale-in animation-delay-300"
           >
-            <Github className="mx-auto mb-2 text-blue-600 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" size={24} />
-            <span className="text-sm text-gray-700 group-hover:text-blue-600 transition-colors">GitHub</span>
+            <Github className="mx-auto mb-1 md:mb-2 text-blue-600 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" size={20} />
+            <span className="text-xs md:text-sm text-gray-700 group-hover:text-blue-600 transition-colors">GitHub</span>
           </a>
         </div>
         
-        {/* 滚动提示 - 添加动画 */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <button
-            onClick={() => scrollToSection('projects')}
-            className="p-3 rounded-full bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 hover:from-blue-200 hover:to-indigo-200 transition-all hover:scale-110 shadow-lg hover:shadow-xl"
-          >
-            <ArrowDown size={20} />
-          </button>
-        </div>
+
       </div>
     </section>
   )

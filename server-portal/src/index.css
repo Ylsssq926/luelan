@@ -20,6 +20,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/* 移动端优化 */
+@media (max-width: 768px) {
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* 优化移动端滚动 */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* 防止图片拖拽 */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 /* 滚动触发动画 */
 @keyframes fadeInUp {
   from {

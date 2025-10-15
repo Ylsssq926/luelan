@@ -22,19 +22,18 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      isScrolled 
-        ? 'glass-effect shadow-lg border-b border-blue-100' 
-        : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+      ? 'glass-effect shadow-lg border-b border-blue-100'
+      : 'bg-transparent'
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo - 添加动画 */}
           <button
             onClick={() => scrollToSection('home')}
-            className="text-xl font-bold gradient-text-animated hover:scale-105 transition-transform cursor-pointer"
+            className="text-lg md:text-xl font-bold gradient-text-animated hover:scale-105 transition-transform cursor-pointer"
           >
-            Azure Glance
+            掠蓝-AI探索者
           </button>
 
           {/* 桌面端导航 - 添加动画 */}
@@ -71,7 +70,7 @@ const Navbar = () => {
 
       {/* 移动端菜单 - 添加滑入动画 */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="md:hidden glass-effect border-t border-blue-100"
           style={{
             animation: 'fadeInDown 0.3s ease-out forwards'

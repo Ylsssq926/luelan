@@ -22,12 +22,16 @@ const TechStack = () => {
       { name: 'Claude', description: 'AI助手与分析工具' }
     ],
     aigc: [
-      { name: 'Stable Diffusion', description: 'AI图像生成模型' },
-      { name: 'Midjourney', description: 'AI艺术创作平台' },
-      { name: 'Recraft', description: 'AI设计工具' },
-      { name: '可灵AI', description: 'AI视频生成工具' },
-      { name: '即梦AI', description: 'AI视频创作平台' },
-      { name: 'Suno AI', description: 'AI音乐创作工具' }
+      { name: 'Stable Diffusion', description: 'AI图像生成 - 本地部署图像创作' },
+      { name: 'Midjourney', description: 'AI图像生成 - 高质量艺术创作' },
+      { name: 'Recraft', description: 'AI图像生成 - 设计工具' },
+      { name: 'Banana', description: 'AI图像生成 - 快速创作工具' },
+      { name: '可灵AI', description: 'AI视频生成 - 文本转视频' },
+      { name: '即梦AI', description: 'AI视频生成 - 视频创作平台' },
+      { name: '阿里万相', description: 'AI视频生成 - 本地部署方案' },
+      { name: 'Suno AI', description: 'AI音乐生成 - 歌曲创作工具' },
+      { name: 'ChatGPT', description: 'AI文本生成 - 内容创作助手' },
+      { name: 'Claude', description: 'AI文本生成 - 长文本处理' }
     ],
     tech: [
       { name: 'C语言', description: '系统编程语言基础' },
@@ -56,26 +60,26 @@ const TechStack = () => {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+    <section className="py-12 md:py-16 lg:py-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 px-4">
             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               技术栈
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-4">
             熟练使用多种产品设计工具和AI工具，具备扎实的技术基础，能够高效完成产品设计与开发协作
           </p>
         </div>
         
-        {/* 分类标签 - 添加动画 */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        {/* 分类标签 - 添加动画 - 移动端优化 */}
+        <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-8 md:mb-12 px-4">
           {categories.map((category, idx) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`px-4 py-2 rounded-lg font-medium transition-all flex items-center gap-2 hover:scale-105 ${
+              className={`px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-sm md:text-base font-medium transition-all flex items-center gap-1.5 md:gap-2 hover:scale-105 ${
                 activeCategory === category.id
                   ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg hover:shadow-xl'
                   : 'bg-white text-gray-700 hover:bg-blue-50 border border-blue-200 hover:border-blue-400'
@@ -85,24 +89,24 @@ const TechStack = () => {
                 opacity: 0
               }}
             >
-              <category.icon size={18} className={activeCategory === category.id ? 'animate-pulse' : ''} />
+              <category.icon size={16} className={`md:w-[18px] md:h-[18px] ${activeCategory === category.id ? 'animate-pulse' : ''}`} />
               {category.name}
             </button>
           ))}
         </div>
         
-        {/* 技术列表 - 添加交错动画 */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        {/* 技术列表 - 添加交错动画 - 移动端优化 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12 md:mb-16">
           {techData[activeCategory as keyof typeof techData].map((tech, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-sm border border-blue-100 hover:shadow-xl transition-all duration-300 card-hover group cursor-default"
+              className="bg-white rounded-xl p-4 md:p-6 shadow-sm border border-blue-100 hover:shadow-xl transition-all duration-300 card-hover group cursor-default"
               style={{
                 animation: `fadeInUp 0.5s ease-out ${index * 0.05}s forwards`,
                 opacity: 0
               }}
             >
-              <h3 className="text-lg font-semibold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors flex items-center gap-2">
+              <h3 className="text-base md:text-lg font-semibold text-gray-800 mb-1 md:mb-2 group-hover:text-blue-600 transition-colors flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-blue-600 group-hover:scale-150 transition-transform"></span>
                 {tech.name}
               </h3>
